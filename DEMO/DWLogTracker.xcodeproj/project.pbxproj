@@ -1,0 +1,623 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FA1FA49620AEE41C009FFE65 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1FA49520AEE41C009FFE65 /* AppDelegate.m */; };
+		FA1FA49920AEE41C009FFE65 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1FA49820AEE41C009FFE65 /* ViewController.m */; };
+		FA1FA49C20AEE41C009FFE65 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA1FA49A20AEE41C009FFE65 /* Main.storyboard */; };
+		FA1FA49E20AEE41D009FFE65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA1FA49D20AEE41D009FFE65 /* Assets.xcassets */; };
+		FA1FA4A120AEE41D009FFE65 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA1FA49F20AEE41D009FFE65 /* LaunchScreen.storyboard */; };
+		FA1FA4A420AEE41D009FFE65 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1FA4A320AEE41D009FFE65 /* main.m */; };
+		FA1FA4AE20AEE41D009FFE65 /* DWLogTrackerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1FA4AD20AEE41D009FFE65 /* DWLogTrackerTests.m */; };
+		FA1FA4B920AEE41D009FFE65 /* DWLogTrackerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1FA4B820AEE41D009FFE65 /* DWLogTrackerUITests.m */; };
+		FA1FA4D020AEE48E009FFE65 /* DWManualOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1FA4C920AEE48E009FFE65 /* DWManualOperation.m */; };
+		FA1FA4D120AEE48E009FFE65 /* DWLogTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1FA4CD20AEE48E009FFE65 /* DWLogTracker.m */; };
+		FA1FA4D220AEE48E009FFE65 /* DWLogCollector.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1FA4CE20AEE48E009FFE65 /* DWLogCollector.m */; };
+		FA1FA4D320AEE48E009FFE65 /* DWLogUploader.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1FA4CF20AEE48E009FFE65 /* DWLogUploader.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FA1FA4AA20AEE41D009FFE65 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA1FA48920AEE41C009FFE65 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA1FA49020AEE41C009FFE65;
+			remoteInfo = DWLogTracker;
+		};
+		FA1FA4B520AEE41D009FFE65 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA1FA48920AEE41C009FFE65 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA1FA49020AEE41C009FFE65;
+			remoteInfo = DWLogTracker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FA1FA49120AEE41C009FFE65 /* DWLogTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DWLogTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA1FA49420AEE41C009FFE65 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FA1FA49520AEE41C009FFE65 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FA1FA49720AEE41C009FFE65 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FA1FA49820AEE41C009FFE65 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FA1FA49B20AEE41C009FFE65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FA1FA49D20AEE41D009FFE65 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FA1FA4A020AEE41D009FFE65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FA1FA4A220AEE41D009FFE65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA1FA4A320AEE41D009FFE65 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FA1FA4A920AEE41D009FFE65 /* DWLogTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DWLogTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA1FA4AD20AEE41D009FFE65 /* DWLogTrackerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DWLogTrackerTests.m; sourceTree = "<group>"; };
+		FA1FA4AF20AEE41D009FFE65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA1FA4B420AEE41D009FFE65 /* DWLogTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DWLogTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA1FA4B820AEE41D009FFE65 /* DWLogTrackerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DWLogTrackerUITests.m; sourceTree = "<group>"; };
+		FA1FA4BA20AEE41D009FFE65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA1FA4C720AEE48E009FFE65 /* DWLogTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWLogTracker.h; sourceTree = "<group>"; };
+		FA1FA4C920AEE48E009FFE65 /* DWManualOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWManualOperation.m; sourceTree = "<group>"; };
+		FA1FA4CA20AEE48E009FFE65 /* DWManualOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWManualOperation.h; sourceTree = "<group>"; };
+		FA1FA4CB20AEE48E009FFE65 /* DWLogCollector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWLogCollector.h; sourceTree = "<group>"; };
+		FA1FA4CC20AEE48E009FFE65 /* DWLogUploader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWLogUploader.h; sourceTree = "<group>"; };
+		FA1FA4CD20AEE48E009FFE65 /* DWLogTracker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWLogTracker.m; sourceTree = "<group>"; };
+		FA1FA4CE20AEE48E009FFE65 /* DWLogCollector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWLogCollector.m; sourceTree = "<group>"; };
+		FA1FA4CF20AEE48E009FFE65 /* DWLogUploader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWLogUploader.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA1FA48E20AEE41C009FFE65 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA1FA4A620AEE41D009FFE65 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA1FA4B120AEE41D009FFE65 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FA1FA48820AEE41C009FFE65 = {
+			isa = PBXGroup;
+			children = (
+				FA1FA49320AEE41C009FFE65 /* DWLogTracker */,
+				FA1FA4AC20AEE41D009FFE65 /* DWLogTrackerTests */,
+				FA1FA4B720AEE41D009FFE65 /* DWLogTrackerUITests */,
+				FA1FA49220AEE41C009FFE65 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FA1FA49220AEE41C009FFE65 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA1FA49120AEE41C009FFE65 /* DWLogTracker.app */,
+				FA1FA4A920AEE41D009FFE65 /* DWLogTrackerTests.xctest */,
+				FA1FA4B420AEE41D009FFE65 /* DWLogTrackerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA1FA49320AEE41C009FFE65 /* DWLogTracker */ = {
+			isa = PBXGroup;
+			children = (
+				FA1FA4C620AEE48E009FFE65 /* DWLogTracker */,
+				FA1FA49420AEE41C009FFE65 /* AppDelegate.h */,
+				FA1FA49520AEE41C009FFE65 /* AppDelegate.m */,
+				FA1FA49720AEE41C009FFE65 /* ViewController.h */,
+				FA1FA49820AEE41C009FFE65 /* ViewController.m */,
+				FA1FA49A20AEE41C009FFE65 /* Main.storyboard */,
+				FA1FA49D20AEE41D009FFE65 /* Assets.xcassets */,
+				FA1FA49F20AEE41D009FFE65 /* LaunchScreen.storyboard */,
+				FA1FA4A220AEE41D009FFE65 /* Info.plist */,
+				FA1FA4A320AEE41D009FFE65 /* main.m */,
+			);
+			path = DWLogTracker;
+			sourceTree = "<group>";
+		};
+		FA1FA4AC20AEE41D009FFE65 /* DWLogTrackerTests */ = {
+			isa = PBXGroup;
+			children = (
+				FA1FA4AD20AEE41D009FFE65 /* DWLogTrackerTests.m */,
+				FA1FA4AF20AEE41D009FFE65 /* Info.plist */,
+			);
+			path = DWLogTrackerTests;
+			sourceTree = "<group>";
+		};
+		FA1FA4B720AEE41D009FFE65 /* DWLogTrackerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FA1FA4B820AEE41D009FFE65 /* DWLogTrackerUITests.m */,
+				FA1FA4BA20AEE41D009FFE65 /* Info.plist */,
+			);
+			path = DWLogTrackerUITests;
+			sourceTree = "<group>";
+		};
+		FA1FA4C620AEE48E009FFE65 /* DWLogTracker */ = {
+			isa = PBXGroup;
+			children = (
+				FA1FA4C720AEE48E009FFE65 /* DWLogTracker.h */,
+				FA1FA4C820AEE48E009FFE65 /* DWManualOperation */,
+				FA1FA4CB20AEE48E009FFE65 /* DWLogCollector.h */,
+				FA1FA4CC20AEE48E009FFE65 /* DWLogUploader.h */,
+				FA1FA4CD20AEE48E009FFE65 /* DWLogTracker.m */,
+				FA1FA4CE20AEE48E009FFE65 /* DWLogCollector.m */,
+				FA1FA4CF20AEE48E009FFE65 /* DWLogUploader.m */,
+			);
+			name = DWLogTracker;
+			path = ../../DWLogTracker;
+			sourceTree = "<group>";
+		};
+		FA1FA4C820AEE48E009FFE65 /* DWManualOperation */ = {
+			isa = PBXGroup;
+			children = (
+				FA1FA4C920AEE48E009FFE65 /* DWManualOperation.m */,
+				FA1FA4CA20AEE48E009FFE65 /* DWManualOperation.h */,
+			);
+			path = DWManualOperation;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FA1FA49020AEE41C009FFE65 /* DWLogTracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA1FA4BD20AEE41D009FFE65 /* Build configuration list for PBXNativeTarget "DWLogTracker" */;
+			buildPhases = (
+				FA1FA48D20AEE41C009FFE65 /* Sources */,
+				FA1FA48E20AEE41C009FFE65 /* Frameworks */,
+				FA1FA48F20AEE41C009FFE65 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DWLogTracker;
+			productName = DWLogTracker;
+			productReference = FA1FA49120AEE41C009FFE65 /* DWLogTracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FA1FA4A820AEE41D009FFE65 /* DWLogTrackerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA1FA4C020AEE41D009FFE65 /* Build configuration list for PBXNativeTarget "DWLogTrackerTests" */;
+			buildPhases = (
+				FA1FA4A520AEE41D009FFE65 /* Sources */,
+				FA1FA4A620AEE41D009FFE65 /* Frameworks */,
+				FA1FA4A720AEE41D009FFE65 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA1FA4AB20AEE41D009FFE65 /* PBXTargetDependency */,
+			);
+			name = DWLogTrackerTests;
+			productName = DWLogTrackerTests;
+			productReference = FA1FA4A920AEE41D009FFE65 /* DWLogTrackerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FA1FA4B320AEE41D009FFE65 /* DWLogTrackerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA1FA4C320AEE41D009FFE65 /* Build configuration list for PBXNativeTarget "DWLogTrackerUITests" */;
+			buildPhases = (
+				FA1FA4B020AEE41D009FFE65 /* Sources */,
+				FA1FA4B120AEE41D009FFE65 /* Frameworks */,
+				FA1FA4B220AEE41D009FFE65 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA1FA4B620AEE41D009FFE65 /* PBXTargetDependency */,
+			);
+			name = DWLogTrackerUITests;
+			productName = DWLogTrackerUITests;
+			productReference = FA1FA4B420AEE41D009FFE65 /* DWLogTrackerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA1FA48920AEE41C009FFE65 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = Wicky;
+				TargetAttributes = {
+					FA1FA49020AEE41C009FFE65 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					FA1FA4A820AEE41D009FFE65 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = FA1FA49020AEE41C009FFE65;
+					};
+					FA1FA4B320AEE41D009FFE65 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = FA1FA49020AEE41C009FFE65;
+					};
+				};
+			};
+			buildConfigurationList = FA1FA48C20AEE41C009FFE65 /* Build configuration list for PBXProject "DWLogTracker" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FA1FA48820AEE41C009FFE65;
+			productRefGroup = FA1FA49220AEE41C009FFE65 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA1FA49020AEE41C009FFE65 /* DWLogTracker */,
+				FA1FA4A820AEE41D009FFE65 /* DWLogTrackerTests */,
+				FA1FA4B320AEE41D009FFE65 /* DWLogTrackerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FA1FA48F20AEE41C009FFE65 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA1FA4A120AEE41D009FFE65 /* LaunchScreen.storyboard in Resources */,
+				FA1FA49E20AEE41D009FFE65 /* Assets.xcassets in Resources */,
+				FA1FA49C20AEE41C009FFE65 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA1FA4A720AEE41D009FFE65 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA1FA4B220AEE41D009FFE65 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA1FA48D20AEE41C009FFE65 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA1FA4D020AEE48E009FFE65 /* DWManualOperation.m in Sources */,
+				FA1FA4D120AEE48E009FFE65 /* DWLogTracker.m in Sources */,
+				FA1FA49920AEE41C009FFE65 /* ViewController.m in Sources */,
+				FA1FA4A420AEE41D009FFE65 /* main.m in Sources */,
+				FA1FA4D320AEE48E009FFE65 /* DWLogUploader.m in Sources */,
+				FA1FA49620AEE41C009FFE65 /* AppDelegate.m in Sources */,
+				FA1FA4D220AEE48E009FFE65 /* DWLogCollector.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA1FA4A520AEE41D009FFE65 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA1FA4AE20AEE41D009FFE65 /* DWLogTrackerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA1FA4B020AEE41D009FFE65 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA1FA4B920AEE41D009FFE65 /* DWLogTrackerUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FA1FA4AB20AEE41D009FFE65 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA1FA49020AEE41C009FFE65 /* DWLogTracker */;
+			targetProxy = FA1FA4AA20AEE41D009FFE65 /* PBXContainerItemProxy */;
+		};
+		FA1FA4B620AEE41D009FFE65 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA1FA49020AEE41C009FFE65 /* DWLogTracker */;
+			targetProxy = FA1FA4B520AEE41D009FFE65 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FA1FA49A20AEE41C009FFE65 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA1FA49B20AEE41C009FFE65 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FA1FA49F20AEE41D009FFE65 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA1FA4A020AEE41D009FFE65 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FA1FA4BB20AEE41D009FFE65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FA1FA4BC20AEE41D009FFE65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FA1FA4BE20AEE41D009FFE65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z26Y87B8NH;
+				INFOPLIST_FILE = DWLogTracker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = CodeWicky.DWLogTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FA1FA4BF20AEE41D009FFE65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z26Y87B8NH;
+				INFOPLIST_FILE = DWLogTracker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = CodeWicky.DWLogTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FA1FA4C120AEE41D009FFE65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z26Y87B8NH;
+				INFOPLIST_FILE = DWLogTrackerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = CodeWicky.DWLogTrackerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DWLogTracker.app/DWLogTracker";
+			};
+			name = Debug;
+		};
+		FA1FA4C220AEE41D009FFE65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z26Y87B8NH;
+				INFOPLIST_FILE = DWLogTrackerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = CodeWicky.DWLogTrackerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DWLogTracker.app/DWLogTracker";
+			};
+			name = Release;
+		};
+		FA1FA4C420AEE41D009FFE65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z26Y87B8NH;
+				INFOPLIST_FILE = DWLogTrackerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = CodeWicky.DWLogTrackerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DWLogTracker;
+			};
+			name = Debug;
+		};
+		FA1FA4C520AEE41D009FFE65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z26Y87B8NH;
+				INFOPLIST_FILE = DWLogTrackerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = CodeWicky.DWLogTrackerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DWLogTracker;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA1FA48C20AEE41C009FFE65 /* Build configuration list for PBXProject "DWLogTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA1FA4BB20AEE41D009FFE65 /* Debug */,
+				FA1FA4BC20AEE41D009FFE65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA1FA4BD20AEE41D009FFE65 /* Build configuration list for PBXNativeTarget "DWLogTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA1FA4BE20AEE41D009FFE65 /* Debug */,
+				FA1FA4BF20AEE41D009FFE65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA1FA4C020AEE41D009FFE65 /* Build configuration list for PBXNativeTarget "DWLogTrackerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA1FA4C120AEE41D009FFE65 /* Debug */,
+				FA1FA4C220AEE41D009FFE65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA1FA4C320AEE41D009FFE65 /* Build configuration list for PBXNativeTarget "DWLogTrackerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA1FA4C420AEE41D009FFE65 /* Debug */,
+				FA1FA4C520AEE41D009FFE65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FA1FA48920AEE41C009FFE65 /* Project object */;
+}
